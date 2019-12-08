@@ -39,3 +39,4 @@ System.out.println(nums[0]+nums[2]); //100 plus 3=103. num0 was changed to 100
 }
 
 }
+
