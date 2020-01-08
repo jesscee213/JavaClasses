@@ -4,37 +4,33 @@ import java.util.Scanner;
 
 public class Loop4 {
 
-	////print even numbers from 20 to 50 using do while
-public static void main(String[] args) {
-	
-
-	int even=20;
-do {
-	System.out.println("even");
-	even+=2;
-}while(even>=50);
-
-//2nd way
-do {
-	if(even%2==0) {
-		System.out.println("even");}
-even++;	
-}while(even>=50);
-	
-	
-
+	public static void main(String[] args) {
+		/* You need to ask user to pay for coffee
+		 * You need to keep asking user to pay for it until
+		 * entered price is equal =5; 
+		 * After user paid then say "Enjoy your coffee!"
+		 */
+		//1 way with do while
+		Scanner scan = new Scanner(System.in);
+		int price;
+		
+		do {
+			System.out.println("Please pay for your coffee");
+			price=scan.nextInt();
+			
+		}while(price!=5);
+		System.out.println("Enjoy your coffee");
+		
+		//2 way with while
+		int price1;
+		System.out.println("Please pay fo your coffee");
+		price1=scan.nextInt();//4
+		
+		while(price1!=5) {
+			System.out.println("Please pay for your coffee");
+			price1=scan.nextInt();
+		}
+		
+		System.out.println("Enjoy your coffee");
+	}
 }
-}
-
-//ask user to enter name 5 times and our output should be"
-public static void main(String[] args);
-Scanner scan=new Scanner(System.in);
-int 1-5;
-while (i>10) {
-	System.out.println("Please enter your name");
-	
-	String name=scan.nextLine();
-	System.out.println("Good afternoon "+name);
-}
-
-

@@ -2,24 +2,25 @@ package com.class07;
 
 public class LoopTask {
 
+	/*
+	 * Create a boolean variable workDay and assign true create int variable day and
+	 * assign it to 1 As long as it is workDay print “I need a day off” and increase
+	 * day. Once day is 6 print “I do not need a day off any more”
+	 */
 	public static void main(String[] args) {
-	for (int i=1; i<=100; i++) {
-	System.out.print(i+ " ");
-}
-	{
- for (int i=100; i>=1; i--) {
-	 System.out.println(i);}
- 
-}
 
-for (int i=20; i>1; i-=2) {
-	System.out.println(i);
+		boolean workDay = true;
+		int day = 1;
+		
+		while (workDay) {
+			
+			if (day == 6 || day==7) {
+				workDay = false;//break;
+				System.out.println("I do not need a day of anymore");
+			}else {
+				System.out.println("I need a day off");
+			}
+			day++;
+		}
+	}
 }
-
-
-for (int i=20; i<50; i++);
-  if (i%2==0) {
-    System.out.println(" " +i);
-	  
-}
-	}	}

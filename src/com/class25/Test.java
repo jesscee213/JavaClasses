@@ -21,44 +21,17 @@ public static void main(String[] args) {
 		
 		System.out.println("---Creating an object of a Developer class-----");
 		Developer dev=new Developer();
-		dev.salary=130000;
+		dev.salary=130000;//accessing default varibale within same package
 		dev.work();
 		dev.getPaid();
 		dev.code();
 		dev.artifacts="Sprint Backlog";
 		dev.ceremonies="Sprint Demo, Planning, Retro, Daily StandUp";
 		dev.attendScrumMeetings();
-		System.out.println("Creating an object of ScrumMaster Team Class");
-        ScrumMaster scrumMas = new ScrumMaster();
-        scrumMas.salary = 100000;
-        scrumMas.work();
-        scrumMas.getPaid();
-        scrumMas.coordinateTeam();
-        scrumMas.artifacts = "Sprint backlog";
-        scrumMas.ceremonies = "Sprint demo, Planning, Retro, Daily standup";
-        scrumMas.attendScrumMeeting();
-        System.out.println("Creating an object of ProductOwner Team Class");
-        ProductOwner proOwner = new ProductOwner();
-        proOwner.salary = 90000;
-        proOwner.work();
-        proOwner.getPaid();
-        proOwner.prioritize();
-        proOwner.artifacts = "Sprint backlog";
-        proOwner.ceremonies = "Sprint demo, Planning, Retro, Daily standup";
-        proOwner.attendScrumMeeting();
-        System.out.println("Creating an object of BussinessAnalyst Team Class");
-        BusinessAnalyst bussAnalyst = new BusinessAnalyst();
-        bussAnalyst.salary = 80000;
-        bussAnalyst.work();
-        bussAnalyst.getPaid();
-        bussAnalyst.writeRequirments();
-        bussAnalyst.artifacts = "Sprint backlog";
-        bussAnalyst.ceremonies = "Sprint demo, Planning, Retro, Daily standup";
-        bussAnalyst.attendScrumMeeting();
-    }
+		dev.employeeId=101;
+		//dev.employeeSsn not accessible
+		
 
-
-
+	
+	}
 }
-
-

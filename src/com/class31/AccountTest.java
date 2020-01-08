@@ -11,7 +11,7 @@ public static void main(String[] args) {
 	double myBalance=acc.getAccountNumber();
 	System.out.println(myBalance);
 	
-	int num=123;
-	String.valueOf(num); ////converts given value to String
+//	int num=123;
+//	String.valueOf(num); ////converts given value to String
 }
 }
